@@ -70,3 +70,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+ul.paper-options {
+    list-style: none;
+    padding: 0;
+}
+
+ul.paper-options li {
+    margin: 10px 0;
+    text-align: left;
+}
