@@ -3,35 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Organ Multimodal Segmentation</title>
+    <title>Multimodal Multi-Organ Segmentation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Multi-Organ Multimodal Segmentation of Pelvic Region</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research Papers</a></li>
+            </ul>
+        </nav>
+        <h1>Multimodal Multi-Organ Segmentation of Pelvic Region</h1>
     </header>
     <main>
-        <div class="content">
-            <div class="left-content">
-                <h2>About Me</h2>
-                <div class="about-me">
-                    <img src="assets/sayan_shaw.jpg" alt="Sayan Shaw" class="profile-pic">
-                    <p><strong>Name:</strong> Sayan Shaw</p>
-                    <p><strong>Email:</strong> <a href="mailto:s24010@students.iitmandi.ac.in">s24010@students.iitmandi.ac.in</a></p>
-                    <p><strong>Course:</strong> MTech Research</p>
-                    <p><strong>Institute:</strong> IIT Mandi, Himachal Pradesh</p>
-                </div>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <img src="assets/sayan_shaw.jpg" alt="Sayan Shaw" class="profile-pic">
+                <p><strong>Name:</strong> Sayan Shaw</p>
+                <p><strong>Email:</strong> <a href="mailto:s24010@students.iitmandi.ac.in">s24010@students.iitmandi.ac.in</a></p>
+                <p><strong>Course:</strong> MTech Research</p>
+                <p><strong>Institute:</strong> IIT Mandi, Himachal Pradesh</p>
             </div>
-            <div class="right-content">
-                <h2>Research Papers</h2>
-                <ul>
-                    <li>
-                        <strong>Title:</strong> <a href="https://drive.google.com/file/d/1czT0fSTP-pHHU8KWMzCFgXPzlKlyRRft/view?usp=sharing" target="_blank">Automatic segmentation of the female pelvic floor muscles</a> <br>
-                        <strong>Publication Year:</strong> 2023
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </section>
+        <section id="research" class="section">
+            <h2>Research Papers</h2>
+            <table class="research-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Research Paper Name</th>
+                        <th>Publication Year</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/1czT0fSTP-pHHU8KWMzCFgXPzlKlyRRft/view?usp=sharing" target="_blank">
+                                Automatic Segmentation of the Female Pelvic Floor Muscles
+                            </a>
+                        </td>
+                        <td>2023</td>
+                        <td>Key contribution to multimodal imaging techniques.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 </body>
 </html>
