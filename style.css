@@ -9,25 +9,37 @@ body {
 header {
     background: linear-gradient(to right, #8B4513, #000);
     color: #fff;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding to make the header narrower */
     text-align: center;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    font-size: 48px;
+    font-size: 32px; /* Reduced font size for a narrower look */
     margin: 0;
     cursor: pointer;
+    flex: 1; /* Allow the title to expand */
+    text-align: center;
 }
 
 header p {
-    margin: 5px 0;
-    font-size: 16px;
+    margin: 0;
+    font-size: 14px;
+    display: inline; /* Ensure the name and email stay on one line */
+}
+header .left-corner {
+    text-align: left;
 }
 
+header .right-corner {
+    text-align: right;
+}
 main {
     padding: 20px;
 }
