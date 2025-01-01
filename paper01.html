@@ -21,11 +21,11 @@
                 <li><strong>Summary:</strong>
                     <p>Focused on Problems like vanishing gradient and overfitting in deeper CNN architecture</p>
                      <p>Proposed DenseNet architecture inspired from following concepts:</p>
-                        <ul class="styled-list">
-                            <li><span class="icon">&#9733;</span> <strong>Highway Networks:</strong> It made feasible to train neural networks with more than 100 layers end-to-end. They achieve this by incorporating bypassing paths and gating units.</li>
-                            <li><span class="icon">&#9733;</span> <strong>Residual Mappings in ResNets:</strong> ResNets also have bypassing paths but simplify it further by introducing pure identity mappings as bypass connections. Unlike Highway Networks, ResNets don't require gating units. Instead, they directly add the output of a layer to its input, forming residual mappings.</li>
-                            <li><span class="icon">&#9733;</span> <strong>Stochastic Depth in ResNets:</strong> It assumes that not all layers are essential during training. So, it randomly drops layers during training. This forces the network to learn alternative pathways and reduces reliance on any single layer.</li>
-                            <li><span class="icon">&#9733;</span> <strong>ResNets with Pre-Activation:</strong> In residual block, activation function (e.g., ReLU) is applied before the convolutional layers.</li>
+                        <ul class="paper-options">
+                            <li> <strong>Highway Networks:</strong> It made feasible to train neural networks with more than 100 layers end-to-end. They achieve this by incorporating bypassing paths and gating units.</li>
+                            <li> <strong>Residual Mappings in ResNets:</strong> ResNets also have bypassing paths but simplify it further by introducing pure identity mappings as bypass connections. Unlike Highway Networks, ResNets don't require gating units. Instead, they directly add the output of a layer to its input, forming residual mappings.</li>
+                            <li> <strong>Stochastic Depth in ResNets:</strong> It assumes that not all layers are essential during training. So, it randomly drops layers during training. This forces the network to learn alternative pathways and reduces reliance on any single layer.</li>
+                            <li> <strong>ResNets with Pre-Activation:</strong> In residual block, activation function (e.g., ReLU) is applied before the convolutional layers.</li>
                         </ul>
                     <p>DenseNet used the idea of bypassing paths further by ensuring that information is passed not just to the next layer, but to all subsequent layers.</p>
                     <p>ResNets combine layer outputs via summation, DenseNet uses concatenation instead.</p>
