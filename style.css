@@ -105,7 +105,9 @@ ul.styled-list li {
     padding-left: 30px;
 }
 
+/* Custom icon styling for list items */
 ul.styled-list .icon {
+    content: "\2022"; /* Unicode for a bullet (dot) */
     color: brown;
     font-size: 18px;
     position: absolute;
