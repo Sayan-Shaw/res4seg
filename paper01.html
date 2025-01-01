@@ -18,19 +18,28 @@
                 </li>
                 <li><strong>Publisher:</strong> IEEE</li>
                 <li><strong>Summary:</strong>
-                    <p>Focused on vanishing gradient problem, a common issue in deeper architecture of CNN,
-                    Some methods are discussed which have skip connections to mitigate this problem.
-                        example: ResNets with residual connections, Highway Networks with identity connections, 
-                        Stochastic Depth technique to create shorter path for gradient flow by dropping layers & 
-                        FractalNets</p>
-                    <p>In this paper DenseNet is used where each layer is connected to every other layer in a feed-forward manner(without backward connections)
-                        unlike typical CNN where each layer is connected only to its immediate successor, leading to dense connectivity;
-                        which actually reduces the number of parameters compared to traditional architectures, here also 
-                        Skip-connections are used. Unlike in ResNets, where the features from earlier layers are summed (residual connections),
-                        DenseNet concatenates the features of previous layers by stacking them together into a larger feature map.</p>
+                    <p>Focused on Problems like vanishing gradient and overfitting in deeper CNN architecture</p>
+                     <p>Proposed DenseNet architecture inspired from following concepts:
+                     <ul>Highway Networks: It made feasible to train neural networks with more than 100 layers end-to-end.
+                                           They achieve this by incorporating bypassing paths and gating units.</ul>
+                     <ul>Residual Mappings in ResNets: ResNets also hev bypassing paths but simplify it further by introducing pure 
+                                  identity mappings as bypass connections. Unlike Highway Networks, ResNets don't require gating units. 
+                                  Instead, they directly add the output of a layer to its input, forming residual mappings.</ul>
+                     <ul>Stochastic Depth in ResNets: It assumes that not all layers are essential during training.
+                                                      So, it randomly drops layers during training. 
+                                                      This forces the network to learn alternative pathways and reduces reliance on any single layer</ul>
+                    <ul>ResNets with Pre-Activation: In residual block, activation function (e.g., ReLU) is applied before the convolutional layers.</ul>
+                    </p>
+                    <p>DenseNet used the idea of bypassing paths further by ensuring that information is passed not just to the next layer, 
+                        but to all subsequent layers.</p>
+                    <p>ResNets combine layer outputs via summation, DenseNet uses concatenation instead.</p>
+                <p>DenseNet addresses the issue of redundancy. Unlike typical CNN where layers learn redundant features repeatedly, 
+                    DenseNet passes all previous layer outputs directly to the current layer which reduces the total number of parameters needed. For this reason 
+                    DenseNet layers are very narrow (e.g., 12 filters per layer) compared to traditional architectures </p>
+                    
                 </li>
                 <li><strong>Model Architecture:</strong>DenseNet</li>
-                <li><strong>Dataset:</strong> <p>CIFAR-10, CIFAR-100, SVHN, and ImageNet</p></li>
+                <li><strong>Dataset:</strong>CIFAR-10, CIFAR-100, SVHN, and ImageNet</li>
             </ul>
         </section>
     </main>
