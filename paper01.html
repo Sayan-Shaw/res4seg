@@ -10,39 +10,33 @@
     <header onclick="location.href='index.html';">
         <h1>Paper Details</h1>
     </header>
+    <div class="sticky-subheader">
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1BRmX_KuEjDHt8j59i6fiYauwV5xTaYaJ/view?usp=drive_link" target="_blank">Download</a>
+                <a href="https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html" target="_blank">Source</a>
+            </li>
+            <li><strong>Publisher:</strong> IEEE</li>
+            <li><strong>Model Architecture:</strong> DenseNet</li>
+            <li><strong>Dataset:</strong> CIFAR-10, CIFAR-100, SVHN, and ImageNet</li>
+        </ul>
+    </div>
     <main>
         <section>
             <ul class="paper-options">
-                <li><a href="https://drive.google.com/file/d/1BRmX_KuEjDHt8j59i6fiYauwV5xTaYaJ/view?usp=drive_link" target="_blank">Download</a>
-                    <a href="https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html" target="_blank">Source</a>
-                </li>
-                <li><strong>Publisher:</strong> IEEE</li>
                 <li><strong>Summary:</strong>
-                    <p>Focused on Problems like vanishing gradient and overfitting in deeper CNN architecture</p>
-                     <p>Proposed DenseNet architecture inspired from following concepts:
-                     <ul>Highway Networks: It made feasible to train neural networks with more than 100 layers end-to-end.
-                                           They achieve this by incorporating bypassing paths and gating units.</ul>
-                     <ul>Residual Mappings in ResNets: ResNets also hev bypassing paths but simplify it further by introducing pure 
-                                  identity mappings as bypass connections. Unlike Highway Networks, ResNets don't require gating units. 
-                                  Instead, they directly add the output of a layer to its input, forming residual mappings.</ul>
-                     <ul>Stochastic Depth in ResNets: It assumes that not all layers are essential during training.
-                                                      So, it randomly drops layers during training. 
-                                                      This forces the network to learn alternative pathways and reduces reliance on any single layer</ul>
-                    <ul>ResNets with Pre-Activation: In residual block, activation function (e.g., ReLU) is applied before the convolutional layers.</ul>
+                    <p>
+                        <ul class="styled-list">
+                            <li><span class="icon">&#9733;</span> <strong>Highway Networks:</strong> It made feasible to train neural networks with more than 100 layers end-to-end. They achieve this by incorporating bypassing paths and gating units.</li>
+                            <li><span class="icon">&#9733;</span> <strong>Residual Mappings in ResNets:</strong> ResNets also have bypassing paths but simplify it further by introducing pure identity mappings as bypass connections. Unlike Highway Networks, ResNets don't require gating units. Instead, they directly add the output of a layer to its input, forming residual mappings.</li>
+                            <li><span class="icon">&#9733;</span> <strong>Stochastic Depth in ResNets:</strong> It assumes that not all layers are essential during training. So, it randomly drops layers during training. This forces the network to learn alternative pathways and reduces reliance on any single layer.</li>
+                            <li><span class="icon">&#9733;</span> <strong>ResNets with Pre-Activation:</strong> In residual block, activation function (e.g., ReLU) is applied before the convolutional layers.</li>
+                        </ul>
                     </p>
-                    <p>DenseNet used the idea of bypassing paths further by ensuring that information is passed not just to the next layer, 
-                        but to all subsequent layers.</p>
+                    <p>DenseNet used the idea of bypassing paths further by ensuring that information is passed not just to the next layer, but to all subsequent layers.</p>
                     <p>ResNets combine layer outputs via summation, DenseNet uses concatenation instead.</p>
-                <p>DenseNet addresses the issue of redundancy. Unlike typical CNN where layers learn redundant features repeatedly, 
-                    DenseNet passes all previous layer outputs directly to the current layer which reduces the total number of parameters needed. For this reason 
-                    DenseNet layers are very narrow (e.g., 12 filters per layer) compared to traditional architectures </p>
-                <p>DenseNet focuses on depth and connectivity for efficient feature reuse while wide architectures like
-                    GoogLeNet, Wide ResNets, and FractalNets having more number of parameters 
-                    expand the network’s capacity to process diverse features at each stage. 
-                    These approaches complement each other</p>
+                    <p>DenseNet addresses the issue of redundancy. Unlike typical CNN where layers learn redundant features repeatedly, DenseNet passes all previous layer outputs directly to the current layer which reduces the total number of parameters needed. For this reason DenseNet layers are very narrow (e.g., 12 filters per layer) compared to traditional architectures.</p>
+                    <p>DenseNet focuses on depth and connectivity for efficient feature reuse while wide architectures like GoogLeNet, Wide ResNets, and FractalNets having more number of parameters expand the network’s capacity to process diverse features at each stage. These approaches complement each other.</p>
                 </li>
-                <li><strong>Model Architecture:</strong>DenseNet</li>
-                <li><strong>Dataset:</strong>CIFAR-10, CIFAR-100, SVHN, and ImageNet</li>
             </ul>
         </section>
     </main>
