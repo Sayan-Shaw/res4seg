@@ -19,92 +19,53 @@ header {
     z-index: 10;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 header h1 {
     font-size: 32px;
     margin: 0;
     cursor: pointer;
-    flex: 1;
-    text-align: center;
-}
-
-header p {
-    margin: 0;
-    font-size: 14px;
-    display: inline;
-}
-
-header .left-corner {
-    text-align: left;
-}
-
-header .right-corner {
-    text-align: right;
 }
 
 /* Sub-header styling */
-.sub-header {
-    background: linear-gradient(to right, #8B4513, #000); /* Same gradient background as header */
-    color: #fff;
-    text-align: center;
-    padding: 5px 20px; /* Narrow padding for compactness */
-    font-size: 0.9em; /* Smaller font size */
-}
-
-/* Main content styling */
-main {
-    padding: 20px;
-}
-
-/* Section heading styles */
-h1 {
-    font-size: 24px;
-    margin: 20px 0;
-}
-
-h2 {
-    font-size: 20px;
-    margin: 30px 0 10px;
-}
-
-/* Paragraph styling */
-p {
-    margin: 5px 0;
+.sticky-subheader {
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    position: sticky;
+    top: 50px;
+    z-index: 9;
     font-size: 16px;
 }
 
-/* Table styling */
-table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 100%;
+.sticky-subheader ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+.sticky-subheader li {
+    margin: 0 10px;
 }
 
 /* Anchor link styling */
 a {
     color: #0066cc;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    text-align: left;
 }
 
 /* List styling */
@@ -114,6 +75,48 @@ ul.paper-options {
 }
 
 ul.paper-options li {
+    margin: 15px 0;
+    font-size: 16px;
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Custom icon styling for list items */
+ul.paper-options .icon {
+    color: brown;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Styled list */
+ul.styled-list {
+    list-style: none;
+    padding: 0;
     margin: 10px 0;
-    text-align: left;
+}
+
+ul.styled-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    position: relative;
+    padding-left: 30px;
+}
+
+ul.styled-list .icon {
+    color: brown;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.8;
 }
