@@ -122,3 +122,32 @@ p {
     font-size: 16px;
     line-height: 1.8;
 }
+
+table {
+    border-collapse: collapse; /* Removes the default border spacing */
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+th, td {
+    padding: 15px; /* Adds spacing between content */
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4; /* Optional: Light background for headers */
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Optional: Alternating row colors for better readability */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Optional: Highlight row on hover */
+}
+
+/* Removes borders between rows and columns */
+table, th, td {
+    border: none;
+}
