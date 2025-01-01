@@ -17,38 +17,20 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 header h1 {
     font-size: 32px;
     margin: 0;
-    cursor: pointer;
 }
 
 /* Sub-header styling */
-.sticky-subheader {
+.sub-header {
     background: #f4f4f4;
-    border-bottom: 1px solid #ddd;
     padding: 10px 20px;
-    position: sticky;
-    top: 50px;
-    z-index: 9;
+    border-bottom: 1px solid #ddd;
     font-size: 16px;
-}
-
-.sticky-subheader ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.sticky-subheader li {
-    margin: 0 10px;
+    text-align: center;
 }
 
 /* Anchor link styling */
@@ -66,88 +48,38 @@ a:hover {
 main {
     padding: 20px;
     text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* List styling */
-ul.paper-options {
-    list-style: none;
-    padding: 0;
-}
-
-ul.paper-options li {
-    margin: 15px 0;
-    font-size: 16px;
-    position: relative;
-    padding-left: 25px;
-}
-
-/* Custom icon styling for list items */
-ul.paper-options .icon {
-    color: brown;
-    font-size: 18px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* Styled list */
-ul.styled-list {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-ul.styled-list li {
-    margin: 10px 0;
-    font-size: 16px;
-    position: relative;
-    padding-left: 30px;
-}
-
-/* Custom icon styling for list items */
-ul.styled-list .icon {
-    content: "\2022"; /* Unicode for a bullet (dot) */
-    color: brown;
-    font-size: 18px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* Paragraph styling */
-p {
-    margin: 10px 0;
-    font-size: 16px;
-    line-height: 1.8;
-}
-
+/* Table styling */
 table {
-    border-collapse: collapse; /* Removes the default border spacing */
+    border-collapse: collapse;
     width: 100%;
     margin: 20px 0;
     font-size: 16px;
     text-align: left;
 }
+
 th, td {
-    padding: 15px; /* Adds spacing between content */
+    padding: 15px; /* Adds spacing within cells */
     text-align: left;
 }
+
 th {
-    background-color: #f4f4f4; /* Optional: Light background for headers */
+    background-color: #f4f4f4; /* Light background for headers */
     font-weight: bold;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Optional: Alternating row colors for better readability */
+    background-color: #f9f9f9; /* Alternating row colors */
 }
 
 tbody tr:hover {
-    background-color: #f1f1f1; /* Optional: Highlight row on hover */
+    background-color: #f1f1f1; /* Highlight row on hover */
 }
 
-/* Removes borders between rows and columns */
+/* Removes all visible borders */
 table, th, td {
     border: none;
 }
