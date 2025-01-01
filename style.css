@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,33 +7,35 @@ body {
     text-align: center;
 }
 
+/* Main header styling */
 header {
-    background: linear-gradient(to right, #8B4513, #000);
+    background: linear-gradient(to right, #8B4513, #000); /* Dark gradient background */
     color: #fff;
-    padding: 10px 20px; /* Reduced padding to make the header narrower */
+    padding: 10px 20px;
     text-align: center;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
-    display: flex; /* Use flexbox for alignment */
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header h1 {
-    font-size: 32px; /* Reduced font size for a narrower look */
+    font-size: 32px;
     margin: 0;
     cursor: pointer;
-    flex: 1; /* Allow the title to expand */
+    flex: 1;
     text-align: center;
 }
 
 header p {
     margin: 0;
     font-size: 14px;
-    display: inline; /* Ensure the name and email stay on one line */
+    display: inline;
 }
+
 header .left-corner {
     text-align: left;
 }
@@ -40,10 +43,22 @@ header .left-corner {
 header .right-corner {
     text-align: right;
 }
+
+/* Sub-header styling */
+.sub-header {
+    background: linear-gradient(to right, #8B4513, #000); /* Same gradient background as header */
+    color: #fff;
+    text-align: center;
+    padding: 5px 20px; /* Narrow padding for compactness */
+    font-size: 0.9em; /* Smaller font size */
+}
+
+/* Main content styling */
 main {
     padding: 20px;
 }
 
+/* Section heading styles */
 h1 {
     font-size: 24px;
     margin: 20px 0;
@@ -54,11 +69,13 @@ h2 {
     margin: 30px 0 10px;
 }
 
+/* Paragraph styling */
 p {
     margin: 5px 0;
     font-size: 16px;
 }
 
+/* Table styling */
 table {
     margin: 20px auto;
     border-collapse: collapse;
@@ -80,6 +97,7 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Anchor link styling */
 a {
     color: #0066cc;
     text-decoration: none;
@@ -89,6 +107,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* List styling */
 ul.paper-options {
     list-style: none;
     padding: 0;
